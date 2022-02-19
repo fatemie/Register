@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
         editor.putString(GENDER, gender)
         editor.apply()
+        Toast.makeText(this, "infornation registered", Toast.LENGTH_SHORT).show()
     }
 
     fun showInfo(){
