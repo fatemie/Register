@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/editTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Full Name"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <EditText
+            android:id="@+id/editTextPersonUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="UserName"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <EditText
+            android:id="@+id/editTextPersonPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <EditText
+            android:id="@+id/editTextPersonReTypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Re-type Password"
+            tools:layout_editor_absoluteX="124dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="305dp" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="210dp"
+            tools:layout_editor_absoluteY="506dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Female"/>
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Male"/>
+
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@color/red"
+            android:textAllCaps="false"
+            app:cornerRadius="100dp"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="431dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonShowInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show info"
+            android:backgroundTint="@color/purple_700"
+            android:textAllCaps="false"
+            app:cornerRadius="100dp"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="431dp" />
+
+        <LinearLayout
+            android:id="@+id/showInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_corner"
+                android:hint="Full name"
+                android:textSize="20dp"
+                android:backgroundTint="@color/slow_blue"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="305dp" />
+
+            <TextView
+                android:id="@+id/textViewUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/slow_blue"
+                android:hint="User name"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="305dp" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_margin="12dp"
+                android:hint="Email"
+                android:textSize="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/slow_blue"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="305dp" />
+
+            <TextView
+                android:id="@+id/textViewPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_margin="12dp"
+                android:hint="Pass word"
+                android:textSize="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/slow_blue"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="305dp" />
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_margin="12dp"
+                android:hint="Gender"
+                android:textSize="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/slow_blue"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="305dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonHideInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hide info"
+                android:backgroundTint="@color/purple_700"
+                android:textAllCaps="false"
+                app:cornerRadius="100dp"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="431dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
