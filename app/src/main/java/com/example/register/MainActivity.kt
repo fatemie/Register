@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         setListener()
+        hi
 
     }
 
